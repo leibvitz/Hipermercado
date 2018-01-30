@@ -20,7 +20,7 @@ public class HiperMercadoMain {
 		if (categorias==null || categorias.size()==0) {
 			strBuffer.append("   =====  SIN CATEGORIAS  ==  \n");
 		} else {
-			strBuffer.append("   ===== CATEGORIAS:  \n");
+			strBuffer.append("   ===== CATERORIAS:  \n");
 			for (ICategoriaBase iCategoriaBase : categorias) {
 				strBuffer.append(iCategoriaBase.toString());
 			}
