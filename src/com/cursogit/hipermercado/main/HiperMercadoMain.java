@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.cursogit.hipermercado.categorias.CategoriaBaseImpl;
 import com.cursogit.hipermercado.categorias.ICategoriaBase;
+import com.cursogit.hipermercado.productos.IProductoBase;
 import com.cursogit.hipermercado.productos.ProductoBaseImpl;
 
 public class HiperMercadoMain {
@@ -44,8 +45,8 @@ public class HiperMercadoMain {
 		ProductoBaseImpl productoBaseImpl = new ProductoBaseImpl("000011");
 		productoBaseImpl.setNombre("Base");
 		productoBaseImpl.setPrecio("0 €");
-		categoriaBase.setProductos(Arrays.asList(productoBaseImpl));
-		hipermercado.setCategorias(Arrays.asList(categoriaBase));
+		categoriaBase.setProductos(Arrays.asList((IProductoBase)productoBaseImpl));
+		hipermercado.setCategorias(Arrays.asList((ICategoriaBase)categoriaBase));
 		System.out.println(hipermercado);
 
 	}
