@@ -32,7 +32,7 @@ public class CategoriaBaseImpl implements ICategoriaBase {
 		} else {
 			strBuffer.append("              == = =  PRODUCTOS: \n");
 			for (IProductoBase iProductoBase : productos) {
-				strBuffer.append(iProductoBase.toString());
+				strBuffer.append(iProductoBase.getTextProductoToPrint());
 			}
 		}
 		strBuffer.append("        == = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  \n");
@@ -49,6 +49,13 @@ public class CategoriaBaseImpl implements ICategoriaBase {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	
+
+	@Override
+	public String getTextCategoriaToPrint() {
+		return this.toString();
 	}
 	
 	

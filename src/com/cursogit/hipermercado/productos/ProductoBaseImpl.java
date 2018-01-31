@@ -63,6 +63,15 @@ public class ProductoBaseImpl implements IProductoBase {
 		strBuffer.append("                             PRECIO    ").append(precio).append(" \n");				
 		return strBuffer.toString();
 	}
+
+
+
+
+
+	@Override
+	public String getTextProductoToPrint() {
+		return this.toString();
+	}
 	
 	
 	
